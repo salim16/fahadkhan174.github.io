@@ -48,7 +48,11 @@
           font-size: 17px;
         }
         
-        ul.topnav li {float: left;}
+        ul.topnav li {float: left;} /* Float the list items side by side */
+        
+        ul.topnav li a:hover {background-color: #555;} /* Change background color of links on hover */
+        
+        ul.topnav li.icon {display: none;} /* Hide the list item that contains the link that should open and close the topnav on small screens */
         
 
         }  
@@ -62,7 +66,6 @@
     
     
       <div class ="parallax">
-          <div class=nav-bar>
             <ul class="topnav">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">Message</a></li>
@@ -76,7 +79,6 @@
                 <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
                 </li>
             </ul>
-          </div>
       </div>
       
       <nav>
