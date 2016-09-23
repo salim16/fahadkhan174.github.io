@@ -298,11 +298,11 @@ function showPage() {
       
       <div class="col-12">
         <ul class="topnav" id="myTopnav">
-          <li><a href="#" onclick="$('#message').animatescroll();">Home</a></li>
+          <li><a href="#" onclick="$('#main').animatescroll();">Home</a></li>
           <li><a href="#" onclick="$('#message').animatescroll();">Campaigns</a></li>
           <li><a href="#" onclick="$('#message').animatescroll();">Achievement</a></li>
           <li><a href="#" onclick="$('#message').animatescroll();">Message</a></li>
-          <li><a href="#" onclick="$('#message').animatescroll();">Donate Us</a></li>
+          <li><a href="#" onclick="$('#contri-table').animatescroll();">Donations</a></li>
           <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
         </ul>
       </div>
@@ -356,9 +356,9 @@ function showPage() {
         </p>
       </div>
       
-      <div class="col-12">
-       <h2>HelpFull Contributions</h2>
+      <div class="col-12" id="contri-table"></div>
        <table align="center" style="width:80%; text-align:center">
+       	<tr><h2>HelpFull Contributions</h2></tr>
          <tr style="font-weight:bold; color: #346ae8;">
                 	<td>s/n</td>
                 	<td>Name</td>
