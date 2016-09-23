@@ -14,19 +14,19 @@
    
     <script>
           function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-                } else {
-                x.className = "topnav";
-               }
-          }
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
    
     </script>
     <script>
 var myVar;
 
-function myFunction() {
+function myLoader() {
     myVar = setTimeout(showPage, 3000);
 }
 
@@ -112,16 +112,16 @@ function showPage() {
         
       }
       
-      ul.topnav{
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-          
-        }
-        
-        /* Float the list items side by side */
+      /* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Float the list items side by side */
 ul.topnav li {float: left;}
 
 /* Style the links inside the list items */
@@ -288,7 +288,7 @@ Example
       
   </head>
   
-  <body onload="myFunction()">
+  <body onload="myLoader()">
     
     <div id="loader"></div>
     <div  style="display:none;" id="main" class="animate-bottom">
