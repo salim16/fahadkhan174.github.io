@@ -48,6 +48,64 @@
         
       }
       
+      .main::after {
+        content: "";
+        clear: both;
+        display: block;
+        
+      }
+      
+      ul.topnav{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        
+        ul.topnav li a {
+          display: inline-block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          transition: 0.3s;
+          font-size: 17px;
+        }
+        
+        ul.topnav li {float: left;} /* Float the list items side by side */
+        
+        ul.topnav li a:hover {background-color: #555;} /* Change background color of links on hover */
+        
+        ul.topnav li.icon {display: none;} /* Hide the list item that contains the link that should open and close the topnav on small screens */
+        
+        /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+        @media screen and (max-width:680px) {
+        ul.topnav li:not(:first-child) {display: none;}
+        ul.topnav li.icon {
+          float: right;
+          display: inline-block;
+        }
+        }
+
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+        @media screen and (max-width:680px) {
+        ul.topnav.responsive {position: relative;}
+        ul.topnav.responsive li.icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        ul.topnav.responsive li {
+          float: none;
+          display: inline;
+        }
+        ul.topnav.responsive li a {
+          display: block;
+          text-align: left;
+        }
+        }
+      
       </style>
       
   </head>
@@ -56,7 +114,23 @@
     <div class="header">
       <img src="https://fahadkhan174.github.io/logo.png" width="90px" heigth="90px">
       <h1 style="display: inline;">Nagriya Vikas Samiti</h1>
-      <p style="display:inline">G.T. Road, Fatehpur</p>
+      <p style="display:inline;padding:2px">G.T. Road, Shagun Palace, Fatehpur</p>
+    </div>
+    
+    <div class="main">
+      <div class="col-12">
+        <ul class="topnav" id="myTopnav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">Message</a></li>
+          <li><a href="#contact">Gallery</a></li>
+          <li><a href="#about">Campaigns</a></li>
+          <li><a href="#contact">Achievement</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Organisation Officers</a></li>
+          <li><a href="#about">Donate Us</a></li>
+          <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
