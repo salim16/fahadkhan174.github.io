@@ -8,140 +8,55 @@
     
     <title>Nagriya Vikas Samiti</title>
     
-    <script>
-          function myFunction() {
-              var x = document.getElementById("myTopnav");
-              if (x.className === "topnav") {
-                x.className += " responsive";
-                } else {
-                x.className = "topnav";
-               }
-          }
-          
-         
-    </script>
-    
-    
     <style>
-    * {box-sizing:border-box}
-    
-      .wrapper {  /* Used in this example to enable scrolling */
-        width: 98%;
-        border: 1px solid gray;
-        padding: 2px;
-        margin: 1%;
-        height: 98%;
-        float:center;
-        
-        }
-        
-     
       
-        ul.topnav{
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-        }
+      * {
+    box-sizing: border-box;
         
-        ul.topnav li a {
-          display: inline-block;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-          transition: 0.3s;
-          font-size: 17px;
-        }
-        
-        ul.topnav li {float: left;} /* Float the list items side by side */
-        
-        ul.topnav li a:hover {background-color: #555;} /* Change background color of links on hover */
-        
-        ul.topnav li.icon {display: none;} /* Hide the list item that contains the link that should open and close the topnav on small screens */
-        
-        /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
-        @media screen and (max-width:680px) {
-        ul.topnav li:not(:first-child) {display: none;}
-        ul.topnav li.icon {
-          float: right;
-          display: inline-block;
-        }
-        }
-
-        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
-        @media screen and (max-width:680px) {
-        ul.topnav.responsive {position: relative;}
-        ul.topnav.responsive li.icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-        ul.topnav.responsive li {
-          float: none;
-          display: inline;
-        }
-        ul.topnav.responsive li a {
-          display: block;
-          text-align: left;
-        }
-        }
-        
-        
-        
+      }
       
+      .row::after {
+        content: "";
+        clear: both;
+        display: block;
+        
+      }
       
-    </style>
-    
+      [class*="col-"] {
+        float: left;
+        padding: 15px;
+        
+      }
+      
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 25%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+      
+      .header {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 15px;
+        
+      }
+      
+      </style>
+      
   </head>
+  
   <body>
-    <div class="wrapper">
-        
-        <div style="border:solid; margin:2px;">
-          <img src="https://fahadkhan174.github.io/logo.png" width="90px" heigth="90px" style="display: inline;">
-          <h1 style="display: inline; color: #346ae8;margin: 0px 0px 60px 0px;">Nagriya Vikas Samiti</h1>
-            <p style="display: inline; color: #346ae8;">G.T.Road, Fatehpur<p>
-        </div>
-          <div style="border:solid; margin:2px;">  
-            <ul class="topnav" id="myTopnav">
-            	  
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">Message</a></li>
-                <li><a href="#contact">Gallery</a></li>
-                <li><a href="#about">Campaigns</a></li>
-                <li><a href="#contact">Achievement</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Organisation Officers</a></li>
-                <li><a href="#about">Donate Us</a></li>
-                <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
-                
-            </ul>
-          </div>
-        
-        <div class="text" style="border:solid; margin:2px;height:70%;">
-              <h3>Our Motive</h3><p>Dear,<br>
-                                Honored you all are aware that the Urban Development Committee colleagues poor, helpless, weak and charitable fund has been established to assist the victims. The committee assisting the needy through charitable work and will act.<br>
-                                The welfare program will be conducted by the Committee: -<br>Poor, helpless, weak, mass marriages of girls undergo.Help for victims of incurable diseases, poor resource poor.Education aid to extremely poor children destitute. To provide proper equipment for the disabled. Monthly pension to people stranded and orphaned. Divine / natural disaster to help affected families. Free homeopathic clinic arranged by the Committee. Emergency and Social Affairs to arrange for a free water tanker. Committee annually through health camps and eye. Helping victims of accidental crash. Helpless poor Hindu community of the city's funeral (diesel bus costs) will be   borne by the Urban Development Committee. All of the city's society and to bury unclaimed cremated corpses unclaimed Mayyt Muslim community as the first city of the shroud -dfn Islam Kazi Abdullah Shidul Committee of Honor is being carried, he said, and he so    vehemently township development committee funds will support.<br> So all of you esteemed colleagues in the society regards the job being requested by the Committee to assist in contributing to the fund by donating sacred human practicing religion.</p>
-        </div>
-      
-     
-      <div style="border:solid; margin:2px;height:100%;">
-          <h1>Web Browsers</h1>
-              <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
-
-        
-            <h1>Google Chrome</h1>
-              <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
-
-        
-      </div>
-      
-      <div style="border:solid; margin:2px;height:100%">
-        <p><small>Hosted on GitHub Pages &mdash; Theme by Fahad </small></p>
-      </div>
-      
+    <div class="header">
+      <img src="https://fahadkhan174.github.io/logo.png" width="90px" heigth="90px">
+      <h1 style="display: inline;">Nagriya Vikas Samiti</h1>
+      <p style="display:inline">G.T. Road, Fatehpur</p>
     </div>
-    
   </body>
 </html>
