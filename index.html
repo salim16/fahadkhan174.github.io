@@ -20,6 +20,20 @@
    
     </script>
     <script>
+         document.onreadystatechange = function () {
+  var state = document.readyState
+  if (state == 'interactive') {
+       document.getElementById('main').style.visibility="hidden";
+  } else if (state == 'complete') {
+      setTimeout(function(){
+         document.getElementById('interactive');
+         document.getElementById('loader').style.visibility="hidden";
+         document.getElementById('main').style.visibility="visible";
+      },1000);
+  }
+}
+</script>
+    <script>
           var slideIndex = 0;
           
           
@@ -46,6 +60,7 @@
             window.onload=function ()
             {showSlides();}
 </script>
+
     
     <style>
       
@@ -210,12 +225,39 @@
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+    
+    
+    .loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
       
       </style>
       
   </head>
   
   <body>
+    
+    <div class="loader"></div>
+    <div class="main">
+      
+    
+    
     <div class="col-12">
       <div class="header">
         <img src="https://fahadkhan174.github.io/logo.png" width="90px" heigth="90px">
@@ -223,8 +265,7 @@
         <p style="display:inline;padding:2px">G.T. Road, Shagun Palace, Fatehpur</p>
       </div>
     </div>
-    
-    <div class="main">
+      
       <div class="col-12">
         <ul class="topnav" id="myTopnav">
           <li><a href="#home">Home</a></li>
